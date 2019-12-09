@@ -13,7 +13,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-//        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
     }
     buildTypes {
         release {
@@ -35,4 +35,8 @@ dependencies {
 //    annotationProcessor project(':Compiler')
 //   // implementation project(':Compiler')
 //    implementation "com.github.android-seven:PermissionsApt:1.0.0"
+    implementation 'com.github.android-seven:PermissionsApt:1.0.1-beta'
+}
+repositories {
+    maven { url 'https://jitpack.io' }
 }
